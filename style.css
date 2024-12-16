@@ -13,7 +13,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .header__link {
+.header .header-link {
   font-family: fantasy, cursive;
 }
 
@@ -32,17 +32,17 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.wrapper {
   display: flex;
 }
-ul {
+.tasks-list, .tasks-list-completed {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.task-item, .subtitle {
   list-style: none;
 }
-input, .button{
+.task-checkbox, .task-edit-input, .button{
   outline: none;
 }
 .button {
@@ -67,7 +67,7 @@ input, .button{
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.input-task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,70 +79,69 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input-task:focus {
   color: #333;
 }
 
 /* New Task */
-.subtitle__new-task {
+.subtitle-new-task {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.task-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.task-item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.task-checkbox {
   margin: 0 10px;
 }
-li > label {
+.task-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.task-edit-input {
   width: 226px
 }
-.delete img {
+.button-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.button-delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul #tasks-todo label {
+.tasks-list-completed .task-label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.task-item .task-edit-input {
   display: none
 }
 
-.edit-mode input[type="text"] {
+.edit-mode .task-edit-input {
   display: inline-block;
   width: 224px
 }
 
-.edit-mode label {
+.edit-mode .task-label {
   display: none;
 }
