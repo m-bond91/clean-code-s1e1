@@ -35,14 +35,18 @@ body {
 .wrapper {
   display: flex;
 }
-.tasks-list, .tasks-list-completed {
+.tasks-list,
+.tasks-list-completed {
   margin:0;
   padding: 0px;
 }
-.task-item, .subtitle {
+.task-item,
+.subtitle {
   list-style: none;
 }
-.task-checkbox, .task-edit-input, .button{
+.task-checkbox,
+.task-edit-input,
+.button{
   outline: none;
 }
 .button {
