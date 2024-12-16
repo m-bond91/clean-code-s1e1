@@ -27,7 +27,7 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.common {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -84,7 +84,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-.new-task {
+.subtitle__new-task {
   display: block;
   margin: 0 0 20px;
 }
@@ -128,7 +128,7 @@ li > input[type="text"] {
 }
 
 /* Completed */
-ul #completed-tasks label {
+ul #tasks-todo label {
   text-decoration: line-through;
   color: #888;
 }
@@ -138,11 +138,11 @@ ul li input[type="text"] {
   display: none
 }
 
-ul li .editMode input[type="text"] {
+.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px
 }
 
-ul li .editMode label {
+.edit-mode label {
   display: none;
 }
